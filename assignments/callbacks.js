@@ -60,14 +60,16 @@ multiplyNums(3, 9, function(mult) {
   // Pass true to the callback if it is, otherwise pass false.
 function contains(item, list, cb) {  
   let result = list.filter(element => element === item);
+  let inArray = () => {
   if (result.length > 0) {
-    answer = "True";
+    return true;
   }  
   else {
-    answer = "False";  
-  }
-  return answer;
-}
+    return false;  
+  }  
+};
+cb(inArray());
+};
 
 contains ('Pencil', items, function(answer) {
  console.log(answer);
