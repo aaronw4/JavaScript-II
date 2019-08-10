@@ -1,6 +1,10 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
-
+let school = "Lambda"
+let greeting = function(name) {
+  return "Hello, " + name + "! Welcome to " + school;
+}
+console.log(greeting('Aaron'));
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
