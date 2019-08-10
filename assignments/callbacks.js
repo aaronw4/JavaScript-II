@@ -32,6 +32,7 @@ getLength(items, function(length) {
   console.log(length)
 });
 
+////////////////////////
 
 function last(arr, cb) {
   return cb(arr[arr.length-1]);
@@ -40,6 +41,7 @@ last(items, function(fxn) {
   console.log(fxn)
 });
 
+///////////////////////
 
 function sumNums(x, y, cb) {
   return cb(x+y);
@@ -48,6 +50,7 @@ sumNums(2, 3, function(add) {
   console.log(add);
 });
 
+//////////////////////
 
 function multiplyNums(x, y, cb) {
  return cb(x*y);
@@ -56,8 +59,8 @@ multiplyNums(3, 9, function(mult) {
   console.log(mult);
 })
 
-// contains checks if an item is present inside of the given array/list.
-  // Pass true to the callback if it is, otherwise pass false.
+////////////////////////
+
 function contains(item, list, cb) {  
   let result = list.filter(element => element === item);
   let inArray = () => {
@@ -78,6 +81,8 @@ contains ('Pencil', items, function(answer) {
 contains ('Calculator', items, function(answer) {
   console.log(answer);
 });
+
+
 
 /* STRETCH PROBLEM */
 
