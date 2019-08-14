@@ -99,7 +99,7 @@ console.log(bigDonor);
 // Problem 2 Need signs for runners with last name and id number.
 let signs = [];
 runners.forEach(tags => {
-    signs.push(tags.first_name + " " + tags.id)
+    signs.push(tags.last_name + " " + tags.id)
 })
 console.log(signs);
 
